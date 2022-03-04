@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Le jeu du console log</title>
+  </head>
+  <body>
+    <header>
+      <section>
+        <h1>Le jeu du console log</h1>
+        <h2>Quiz sur les const let var</h2>
+      </section>
+      <nav>
+        <p>
+          <span id="goDown">&larr;</span> Questions :
+          <span id="current"></span>/<span id="final"> </span
+          ><span id="goUp">&rarr;</span>
+        </p>
+      </nav>
+    </header>
+    <main>
+      <code id="question">Mon code ici</code>
+      <section>
+        <div id="coms">Commentaire ou aide</div>
+        <div id="reponses"></div>
+      </section>
+    </main>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
