@@ -78,7 +78,7 @@ const arrayQuestions = {
       R2: "erreur",
       R3: "undefined",
     },
-    comms: "Et si on inverse",
+    comms: "Et si on inverse.",
     reponse: "R1",
   },
   8: {
