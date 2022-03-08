@@ -43,7 +43,11 @@ const arrayQuestions = {
       R4: "undefined",
     },
     comms:
+<<<<<<< HEAD
       "Dans le code précédant \njavascript fait var coucou;\n console.log(coucou);\n coucou = 'coucou'",
+=======
+      "Dans le code précédant console.log(coucou);\nvar coucou = 'coucou'; \njavascript fait var coucou;\n console.log(coucou);\n coucou = 'coucou'",
+>>>>>>> b5fe381535562a87a2b79c3ca6f7911f5a61e781
     reponse: "R2",
   },
   5: {
