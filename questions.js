@@ -235,12 +235,84 @@ const arrayQuestions = {
   },
   21: {
     question:
+      "function toto() {\n console.log('maman');\n}\n setTimeout(toto, 0); \nconsole.log('coucou');",
+    rep: {
+      R1: "maman coucou",
+      R2: "coucou maman",
+      R3: "erreur",
+      R4: "aucune des réponses proposé",
+    },
+    comms: "Essayons un setTimeout",
+    reponse: "R2",
+  },
+  22: {
+    question:
+      "function toto(test) {\n if (test == 1) { \n  console.log('coucou1'); \n } \n if (test == 2) { \n console.log('coucou2');\n}\n}\n setTimeout(toto(1), 500);",
+    rep: {
+      R1: "coucou1 (aprés 500ms)",
+      R2: "coucou1",
+      R3: "coucou2 (aprés 500ms)",
+      R4: "aucune des réponses proposé",
+    },
+    comms: "Le setTimeout 0 n'existe pas il prend la valeur minimum a 4ms",
+    reponse: "R2",
+  },
+  23: {
+    question:
+      "function toto(test) {\n if (test == 1) { \n  console.log('coucou1'); \n } \n if (test == 2) { \n console.log('coucou2');\n}\n}\n setTimeout(() => { \n toto(1);\n }, 500);",
+    rep: {
+      R1: "coucou1 (aprés 500ms)",
+      R2: "coucou1",
+      R3: "coucou2 (aprés 500ms)",
+      R4: "aucune des réponses proposé",
+    },
+    comms:
+      "Attention au setTimeOut(function(avec parametre) \n la function est appellé directement comme pour le addEventListener",
+    reponse: "R1",
+  },
+  24: {
+    question:
+      "function toto(test) {\n if (test == 1) { \n  console.log('coucou1'); \n } \n if (test == 2) { \n console.log('coucou2');\n}\n}\n setTimeout(toto.bind(null,1), 500);",
+    rep: {
+      R1: "coucou1 (aprés 500ms)",
+      R2: "coucou1",
+      R3: "coucou2 (aprés 500ms)",
+      R4: "aucune des réponses proposé",
+    },
+    comms: "et le bind?",
+    reponse: "R1",
+  },
+  25: {
+    question:
+      "const test = (text) => console.log(text);\n test(3); \n test.bind(null,3)();",
+    rep: {
+      R1: "3",
+      R2: "text",
+      R3: "rien",
+      R4: "aucune des réponses proposé",
+    },
+    comms: "mais alors c'est quoi () ?",
+    reponse: "R1",
+  },
+  26: {
+    question:
+      "const test = true+true === 2 // donne true\n console.log(true===1)",
+    rep: {
+      R1: "true",
+      R2: "false",
+      R3: "aucune des réponses proposé",
+    },
+    comms: "Mystere est bull de gomme",
+    reponse: "R2",
+  },
+  27: {
+    question:
       "Avez vous aimez ce quiz ? voulez vous qu'il soit plus long? clicker sur le gitHub proposer une suite ...",
     rep: {
       R1: "oui",
       R2: "non",
     },
-    comms: "La fin ...",
+    comms: "true == 1 renvoie true mais true === 1 non !",
     reponse: "R1",
   },
 };
